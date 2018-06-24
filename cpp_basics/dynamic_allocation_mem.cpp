@@ -1,33 +1,31 @@
 #include <iostream>
 
-using namespace std;
-
 int main()
 {
-/*
+
     int amount;
 
-    cout << "total numbers you would like to store?" << endl;
-    cin >> amount;
+    std::cout << "total numbers you would like to store?" << std::endl;
+    std::cin >> amount;
 
-    int *pointer = new (std::nothrow)int (amount);
+    int *pointer = new (std::nothrow)int[amount];
     // cout << "pointer address: " << pointer << endl;
-    cout << "pointer here: " << pointer << endl;
+    std::cout << "pointer here: " << pointer << std::endl;
     if (pointer)
     {
         for (int i = 0; i < amount; i++)
         {
-            cout << "enter the: " << (i + 1) << " number: ";
-            cin >> pointer[i];
+            std::cout << "enter the: " << (i + 1) << " number: ";
+            std::cin >> pointer[i];
         }
         for (int i = 0; i < amount; i++)
-            cout << "pointer [" << i << "] = " << pointer[i] << endl;
+            std::cout << "pointer [" << i << "] = " << pointer[i] << std::endl;
     }
     else
-        cout << "Not enough memory." << endl;
-    delete pointer;
+        std::cout << "Not enough memory." << std::endl;
+    delete[] pointer;
     return (0);
-*/
+/*
     int *pointer = new int;
     *pointer = 50;
     cout << pointer << endl;
@@ -41,4 +39,5 @@ int main()
         cout << *pointer << endl;
     }
     // cout << pointer << endl;
+*/
 }

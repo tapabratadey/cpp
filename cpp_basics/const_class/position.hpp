@@ -10,6 +10,7 @@ class   Position
         ~Position();
         void getPosition() const;
         void setPosition(int, int);
+        friend void setX(Position &, int);
 };
 
 #endif // POSITION_H_
