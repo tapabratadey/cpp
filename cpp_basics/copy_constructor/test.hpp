@@ -7,7 +7,9 @@ class Test
     public:
         int x;
         int y;
-        Test(int, int);
+        int *pointer;
+        Test(const Test &); // copy constructor
+        Test(int, int, int);
         ~Test();
 };
 
